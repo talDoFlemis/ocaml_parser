@@ -20,6 +20,7 @@ type t =
   | If
   | Else
   | While
+  | Do
   | Read
   | Write
   | Prog

@@ -14,9 +14,13 @@ and expression =
       consequence : block;
       alternative : block option;
     }
+  | While of { condition : expression; body : block }
+  | Read of { identifier : identifier }
+  | Write of { expression : expression }
 [@@deriving show { with_path = false }, sexp]
 
 and statement =
+  | Assignment of { name : identifier; value : expression }
   | ExpressionStatement of expression
   | BlockStatement of block
 [@@deriving show { with_path = false }, sexp]
