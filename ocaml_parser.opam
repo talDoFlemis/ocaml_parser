@@ -12,6 +12,10 @@ bug-reports: "https://github.com/username/reponame/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.10"}
+  "ppx_deriving"
+  "ppx_expect"
+  "ppx_sexp_conv"
+  "sexplib"
   "odoc" {with-doc}
 ]
 build: [

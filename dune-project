@@ -19,7 +19,8 @@
  (name ocaml_parser)
  (synopsis "A short synopsis")
  (description "A longer description")
- (depends ocaml dune)
+ (depends ocaml dune ppx_deriving ppx_expect 
+          ppx_sexp_conv sexplib)
  (tags
   (topics "to describe" your project)))
 
